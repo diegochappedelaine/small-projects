@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
+import { Heading } from '@chakra-ui/react';
 
 const Index: NextPage = () => {
-  return <h1>Small projects</h1>;
+  return <Heading>Small projects</Heading>;
 };
 
 export default Index;
