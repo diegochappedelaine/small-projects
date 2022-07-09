@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bin2DescPage should render correctly 1`] = `
+<div>
+  <div
+    class="chakra-container css-0"
+  >
+    <div
+      class="chakra-stack css-jampdr"
+    >
+      <h2
+        class="chakra-heading css-164r41r"
+      >
+        Binary To Descimal
+      </h2>
+      <h2
+        class="chakra-heading css-1n49pl7"
+      >
+        Convert binary input to decimal
+      </h2>
+      <p
+        class="chakra-text css-6dvxm2"
+      >
+        Binary
+      </p>
+      <ol
+        class="chakra-stack css-84zodg"
+      >
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+        <li
+          class="css-gptsw1"
+        >
+          -
+        </li>
+      </ol>
+      <hr
+        aria-orientation="horizontal"
+        class="chakra-divider css-1upb9tn"
+      />
+      <p
+        class="chakra-text css-6dvxm2"
+      >
+        Decimal
+      </p>
+      <p
+        class="css-1qm7lvz"
+      >
+        0
+      </p>
+    </div>
+  </div>
+</div>
+`;
