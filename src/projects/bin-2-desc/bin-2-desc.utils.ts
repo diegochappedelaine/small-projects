@@ -14,3 +14,14 @@ export const convertBinaryToDecimal = (binary: string): number => {
 
   return decimal;
 };
+
+export const getInputStatus = (
+  input: string,
+  maxLength: number,
+): {
+  isInputFull: boolean;
+  isInputEmpty: boolean;
+} => ({
+  isInputFull: input.length === maxLength,
+  isInputEmpty: input.length === 0,
+});

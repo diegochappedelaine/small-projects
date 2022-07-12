@@ -1,22 +1,34 @@
 import { addHyphensToFillUnusedChar, reserseString } from '.';
 
+const addHyphensToFillUnusedCharTestCases = [
+  { input: '123', maxLength: 3, output: '123' },
+  { input: '123', maxLength: 10, output: '-------123' },
+  { input: '', maxLength: 10, output: '----------' },
+];
+const reverseStringTestCases = [
+  { input: '123', output: '321' },
+  { input: '', output: '' },
+  { input: 'abc', output: 'cba' },
+];
+
 describe('utils', () => {
   describe('addHyphensToFillUnusedChar', () => {
-    it('should add hyphens to fill unused characters', () => {
-      const input = '123';
-      const maxLength = 10;
-      const expected = '-------123';
-      const actual = addHyphensToFillUnusedChar(input, maxLength);
-      expect(actual).toEqual(expected);
-    });
+    it.each(addHyphensToFillUnusedCharTestCases)(
+      'should add hyphens to fill unused char',
+      ({ input, maxLength, output }) => {
+        const actual = addHyphensToFillUnusedChar(input, maxLength);
+        expect(actual).toEqual(output);
+      },
+    );
   });
 
   describe('reverseString', () => {
-    it('should reverse string', () => {
-      const input = '123';
-      const expected = '321';
-      const actual = reserseString(input);
-      expect(actual).toEqual(expected);
-    });
+    it.each(reverseStringTestCases)(
+      'should reverse string',
+      ({ input, output }) => {
+        const actual = reserseString(input);
+        expect(actual).toEqual(output);
+      },
+    );
   });
 });
